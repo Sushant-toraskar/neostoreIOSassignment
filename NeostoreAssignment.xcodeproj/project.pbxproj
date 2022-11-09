@@ -3,18 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F88A8059AF675E91B03BEA4 /* Pods_NeostoreAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85EFD5F734C8344200EBDF08 /* Pods_NeostoreAssignmentTests.framework */; };
 		926CE939291A63B3001A81D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926CE938291A63B3001A81D4 /* AppDelegate.swift */; };
 		926CE93B291A63B3001A81D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926CE93A291A63B3001A81D4 /* SceneDelegate.swift */; };
-		926CE93D291A63B3001A81D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926CE93C291A63B3001A81D4 /* ViewController.swift */; };
+		926CE93D291A63B3001A81D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926CE93C291A63B3001A81D4 /* LoginViewController.swift */; };
 		926CE940291A63B3001A81D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926CE93E291A63B3001A81D4 /* Main.storyboard */; };
 		926CE942291A63B6001A81D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 926CE941291A63B6001A81D4 /* Assets.xcassets */; };
 		926CE945291A63B6001A81D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926CE943291A63B6001A81D4 /* LaunchScreen.storyboard */; };
 		926CE950291A63B6001A81D4 /* NeostoreAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926CE94F291A63B6001A81D4 /* NeostoreAssignmentTests.swift */; };
 		926CE95B291A63B6001A81D4 /* NeostoreAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926CE95A291A63B6001A81D4 /* NeostoreAssignmentUITests.swift */; };
+		93B3DB14506507E2370AB43D /* Pods_NeostoreAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC46D85C6F874BD043A5B22 /* Pods_NeostoreAssignment.framework */; };
+		C3A911E744769E040631569E /* Pods_NeostoreAssignment_NeostoreAssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601CDC33E4CAD61EA8ED723A /* Pods_NeostoreAssignment_NeostoreAssignmentUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DCF5E268728C4E953891BD9 /* Pods-NeostoreAssignment-NeostoreAssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeostoreAssignment-NeostoreAssignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-NeostoreAssignment-NeostoreAssignmentUITests/Pods-NeostoreAssignment-NeostoreAssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		55F49090E559D95A0D5A0772 /* Pods-NeostoreAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeostoreAssignment.debug.xcconfig"; path = "Target Support Files/Pods-NeostoreAssignment/Pods-NeostoreAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		601CDC33E4CAD61EA8ED723A /* Pods_NeostoreAssignment_NeostoreAssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeostoreAssignment_NeostoreAssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85EFD5F734C8344200EBDF08 /* Pods_NeostoreAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeostoreAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		926CE935291A63B3001A81D4 /* NeostoreAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeostoreAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		926CE938291A63B3001A81D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		926CE93A291A63B3001A81D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		926CE93C291A63B3001A81D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		926CE93C291A63B3001A81D4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		926CE93F291A63B3001A81D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		926CE941291A63B6001A81D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		926CE944291A63B6001A81D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +56,11 @@
 		926CE956291A63B6001A81D4 /* NeostoreAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeostoreAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		926CE95A291A63B6001A81D4 /* NeostoreAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeostoreAssignmentUITests.swift; sourceTree = "<group>"; };
 		926CE95C291A63B6001A81D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFD27314FC4C72656DA19579 /* Pods-NeostoreAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeostoreAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-NeostoreAssignmentTests/Pods-NeostoreAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CEC46D85C6F874BD043A5B22 /* Pods_NeostoreAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeostoreAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0FB939892A8C995BA25D9E6 /* Pods-NeostoreAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeostoreAssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-NeostoreAssignmentTests/Pods-NeostoreAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		F218BE151C9D794C5A35694C /* Pods-NeostoreAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeostoreAssignment.release.xcconfig"; path = "Target Support Files/Pods-NeostoreAssignment/Pods-NeostoreAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		F5EEB11F60794A909C9F8EAB /* Pods-NeostoreAssignment-NeostoreAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeostoreAssignment-NeostoreAssignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-NeostoreAssignment-NeostoreAssignmentUITests/Pods-NeostoreAssignment-NeostoreAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93B3DB14506507E2370AB43D /* Pods_NeostoreAssignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F88A8059AF675E91B03BEA4 /* Pods_NeostoreAssignmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3A911E744769E040631569E /* Pods_NeostoreAssignment_NeostoreAssignmentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				926CE94E291A63B6001A81D4 /* NeostoreAssignmentTests */,
 				926CE959291A63B6001A81D4 /* NeostoreAssignmentUITests */,
 				926CE936291A63B3001A81D4 /* Products */,
+				A089677577A8E08DF1620581 /* Pods */,
+				9C7A357B309610DB1B122269 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +116,12 @@
 		926CE937291A63B3001A81D4 /* NeostoreAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				926CE96B291A6927001A81D4 /* ViewModels */,
+				926CE96A291A6914001A81D4 /* Models */,
+				926CE969291A6903001A81D4 /* API Services */,
+				926CE968291A68F2001A81D4 /* controllers */,
 				926CE938291A63B3001A81D4 /* AppDelegate.swift */,
 				926CE93A291A63B3001A81D4 /* SceneDelegate.swift */,
-				926CE93C291A63B3001A81D4 /* ViewController.swift */,
 				926CE93E291A63B3001A81D4 /* Main.storyboard */,
 				926CE941291A63B6001A81D4 /* Assets.xcassets */,
 				926CE943291A63B6001A81D4 /* LaunchScreen.storyboard */,
@@ -128,6 +148,58 @@
 			path = NeostoreAssignmentUITests;
 			sourceTree = "<group>";
 		};
+		926CE968291A68F2001A81D4 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				926CE93C291A63B3001A81D4 /* LoginViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		926CE969291A6903001A81D4 /* API Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "API Services";
+			sourceTree = "<group>";
+		};
+		926CE96A291A6914001A81D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		926CE96B291A6927001A81D4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9C7A357B309610DB1B122269 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEC46D85C6F874BD043A5B22 /* Pods_NeostoreAssignment.framework */,
+				601CDC33E4CAD61EA8ED723A /* Pods_NeostoreAssignment_NeostoreAssignmentUITests.framework */,
+				85EFD5F734C8344200EBDF08 /* Pods_NeostoreAssignmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A089677577A8E08DF1620581 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55F49090E559D95A0D5A0772 /* Pods-NeostoreAssignment.debug.xcconfig */,
+				F218BE151C9D794C5A35694C /* Pods-NeostoreAssignment.release.xcconfig */,
+				1DCF5E268728C4E953891BD9 /* Pods-NeostoreAssignment-NeostoreAssignmentUITests.debug.xcconfig */,
+				F5EEB11F60794A909C9F8EAB /* Pods-NeostoreAssignment-NeostoreAssignmentUITests.release.xcconfig */,
+				AFD27314FC4C72656DA19579 /* Pods-NeostoreAssignmentTests.debug.xcconfig */,
+				D0FB939892A8C995BA25D9E6 /* Pods-NeostoreAssignmentTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 926CE95F291A63B6001A81D4 /* Build configuration list for PBXNativeTarget "NeostoreAssignment" */;
 			buildPhases = (
+				8846E72137BA28C73A33FC87 /* [CP] Check Pods Manifest.lock */,
 				926CE931291A63B3001A81D4 /* Sources */,
 				926CE932291A63B3001A81D4 /* Frameworks */,
 				926CE933291A63B3001A81D4 /* Resources */,
+				6BC69BAA3BE75E111C2FB787 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 926CE962291A63B6001A81D4 /* Build configuration list for PBXNativeTarget "NeostoreAssignmentTests" */;
 			buildPhases = (
+				C8585ED3384319CD033EC34C /* [CP] Check Pods Manifest.lock */,
 				926CE947291A63B6001A81D4 /* Sources */,
 				926CE948291A63B6001A81D4 /* Frameworks */,
 				926CE949291A63B6001A81D4 /* Resources */,
@@ -170,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 926CE965291A63B6001A81D4 /* Build configuration list for PBXNativeTarget "NeostoreAssignmentUITests" */;
 			buildPhases = (
+				E418671E89394F9DC4FA35C1 /* [CP] Check Pods Manifest.lock */,
 				926CE952291A63B6001A81D4 /* Sources */,
 				926CE953291A63B6001A81D4 /* Frameworks */,
 				926CE954291A63B6001A81D4 /* Resources */,
+				B7E396387E677696F169B50E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,12 +330,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6BC69BAA3BE75E111C2FB787 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeostoreAssignment/Pods-NeostoreAssignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeostoreAssignment/Pods-NeostoreAssignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeostoreAssignment/Pods-NeostoreAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8846E72137BA28C73A33FC87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NeostoreAssignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7E396387E677696F169B50E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeostoreAssignment-NeostoreAssignmentUITests/Pods-NeostoreAssignment-NeostoreAssignmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeostoreAssignment-NeostoreAssignmentUITests/Pods-NeostoreAssignment-NeostoreAssignmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeostoreAssignment-NeostoreAssignmentUITests/Pods-NeostoreAssignment-NeostoreAssignmentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8585ED3384319CD033EC34C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NeostoreAssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E418671E89394F9DC4FA35C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NeostoreAssignment-NeostoreAssignmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		926CE931291A63B3001A81D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				926CE93D291A63B3001A81D4 /* ViewController.swift in Sources */,
+				926CE93D291A63B3001A81D4 /* LoginViewController.swift in Sources */,
 				926CE939291A63B3001A81D4 /* AppDelegate.swift in Sources */,
 				926CE93B291A63B3001A81D4 /* SceneDelegate.swift in Sources */,
 			);
@@ -433,6 +613,7 @@
 		};
 		926CE960291A63B6001A81D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55F49090E559D95A0D5A0772 /* Pods-NeostoreAssignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +633,7 @@
 		};
 		926CE961291A63B6001A81D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F218BE151C9D794C5A35694C /* Pods-NeostoreAssignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +653,7 @@
 		};
 		926CE963291A63B6001A81D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFD27314FC4C72656DA19579 /* Pods-NeostoreAssignmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +676,7 @@
 		};
 		926CE964291A63B6001A81D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0FB939892A8C995BA25D9E6 /* Pods-NeostoreAssignmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +699,7 @@
 		};
 		926CE966291A63B6001A81D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DCF5E268728C4E953891BD9 /* Pods-NeostoreAssignment-NeostoreAssignmentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +720,7 @@
 		};
 		926CE967291A63B6001A81D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5EEB11F60794A909C9F8EAB /* Pods-NeostoreAssignment-NeostoreAssignmentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
