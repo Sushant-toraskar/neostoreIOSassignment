@@ -7,6 +7,8 @@ target 'NeostoreAssignment' do
 
   # Pods for NeostoreAssignment
   pod 'IQKeyboardManagerSwift'
+  pod 'SideMenu'
+
 
   target 'NeostoreAssignmentTests' do
     inherit! :search_paths
