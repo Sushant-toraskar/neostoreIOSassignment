@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		6F88A8059AF675E91B03BEA4 /* Pods_NeostoreAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85EFD5F734C8344200EBDF08 /* Pods_NeostoreAssignmentTests.framework */; };
 		9212CEDB291E16EB004ABAB0 /* NavigationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9212CEDA291E16EB004ABAB0 /* NavigationModel.swift */; };
-		9212CEDE291E1832004ABAB0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9212CEDD291E1832004ABAB0 /* TableViewCell.swift */; };
 		924DB9F7291E32F100B374BA /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924DB9F5291E32F100B374BA /* SideMenuTableViewCell.swift */; };
 		924DB9F8291E32F100B374BA /* SideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 924DB9F6291E32F100B374BA /* SideMenuTableViewCell.xib */; };
 		924DB9FB291E332F00B374BA /* ProfilePicCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924DB9F9291E332F00B374BA /* ProfilePicCellTableViewCell.swift */; };
 		924DB9FC291E332F00B374BA /* ProfilePicCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 924DB9FA291E332F00B374BA /* ProfilePicCellTableViewCell.xib */; };
+		926002DE291E5D9400EAF3C2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926002DC291E5D9400EAF3C2 /* CollectionViewCell.swift */; };
+		926002DF291E5D9400EAF3C2 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 926002DD291E5D9400EAF3C2 /* CollectionViewCell.xib */; };
+		926002E429220CDE00EAF3C2 /* ProductTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926002E229220CDE00EAF3C2 /* ProductTypeCollectionViewCell.swift */; };
+		926002E529220CDE00EAF3C2 /* ProductTypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 926002E329220CDE00EAF3C2 /* ProductTypeCollectionViewCell.xib */; };
 		926CE939291A63B3001A81D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926CE938291A63B3001A81D4 /* AppDelegate.swift */; };
 		926CE93B291A63B3001A81D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926CE93A291A63B3001A81D4 /* SceneDelegate.swift */; };
 		926CE93D291A63B3001A81D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926CE93C291A63B3001A81D4 /* LoginViewController.swift */; };
@@ -26,7 +29,6 @@
 		926CE96F291B9FAE001A81D4 /* SignUpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926CE96E291B9FAE001A81D4 /* SignUpPageViewController.swift */; };
 		926CE972291BBDC7001A81D4 /* customtextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926CE971291BBDC7001A81D4 /* customtextfield.swift */; };
 		926CE974291BDA2B001A81D4 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926CE973291BDA2B001A81D4 /* ForgetPasswordViewController.swift */; };
-		926CE978291D2BA6001A81D4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926CE977291D2BA6001A81D4 /* HomeViewController.swift */; };
 		926CE97E291D3065001A81D4 /* sideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926CE97D291D3065001A81D4 /* sideMenuViewController.swift */; };
 		93B3DB14506507E2370AB43D /* Pods_NeostoreAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC46D85C6F874BD043A5B22 /* Pods_NeostoreAssignment.framework */; };
 		C3A911E744769E040631569E /* Pods_NeostoreAssignment_NeostoreAssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601CDC33E4CAD61EA8ED723A /* Pods_NeostoreAssignment_NeostoreAssignmentUITests.framework */; };
@@ -55,11 +57,14 @@
 		601CDC33E4CAD61EA8ED723A /* Pods_NeostoreAssignment_NeostoreAssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeostoreAssignment_NeostoreAssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85EFD5F734C8344200EBDF08 /* Pods_NeostoreAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeostoreAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9212CEDA291E16EB004ABAB0 /* NavigationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModel.swift; sourceTree = "<group>"; };
-		9212CEDD291E1832004ABAB0 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		924DB9F5291E32F100B374BA /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
 		924DB9F6291E32F100B374BA /* SideMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuTableViewCell.xib; sourceTree = "<group>"; };
 		924DB9F9291E332F00B374BA /* ProfilePicCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePicCellTableViewCell.swift; sourceTree = "<group>"; };
 		924DB9FA291E332F00B374BA /* ProfilePicCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfilePicCellTableViewCell.xib; sourceTree = "<group>"; };
+		926002DC291E5D9400EAF3C2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		926002DD291E5D9400EAF3C2 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		926002E229220CDE00EAF3C2 /* ProductTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTypeCollectionViewCell.swift; sourceTree = "<group>"; };
+		926002E329220CDE00EAF3C2 /* ProductTypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTypeCollectionViewCell.xib; sourceTree = "<group>"; };
 		926CE935291A63B3001A81D4 /* NeostoreAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeostoreAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		926CE938291A63B3001A81D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		926CE93A291A63B3001A81D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,8 +83,7 @@
 		926CE96E291B9FAE001A81D4 /* SignUpPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPageViewController.swift; sourceTree = "<group>"; };
 		926CE971291BBDC7001A81D4 /* customtextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customtextfield.swift; sourceTree = "<group>"; };
 		926CE973291BDA2B001A81D4 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
-		926CE977291D2BA6001A81D4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		926CE97D291D3065001A81D4 /* sideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideMenuViewController.swift; sourceTree = SOURCE_ROOT; };
+		926CE97D291D3065001A81D4 /* sideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = sideMenuViewController.swift; path = NeostoreAssignment/controllers/HomePage/sideMenuViewController.swift; sourceTree = SOURCE_ROOT; };
 		AFD27314FC4C72656DA19579 /* Pods-NeostoreAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeostoreAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-NeostoreAssignmentTests/Pods-NeostoreAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CEC46D85C6F874BD043A5B22 /* Pods_NeostoreAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeostoreAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FB939892A8C995BA25D9E6 /* Pods-NeostoreAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeostoreAssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-NeostoreAssignmentTests/Pods-NeostoreAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,16 +119,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9212CEDC291E1813004ABAB0 /* SideTableCells */ = {
+		926002E629224CD100EAF3C2 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
-				9212CEDD291E1832004ABAB0 /* TableViewCell.swift */,
-				924DB9F5291E32F100B374BA /* SideMenuTableViewCell.swift */,
-				924DB9F6291E32F100B374BA /* SideMenuTableViewCell.xib */,
+				926CE97D291D3065001A81D4 /* sideMenuViewController.swift */,
+				926002E829224D7700EAF3C2 /* HomePageCell */,
+				926002E729224D0700EAF3C2 /* sideMenu */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		926002E729224D0700EAF3C2 /* sideMenu */ = {
+			isa = PBXGroup;
+			children = (
 				924DB9F9291E332F00B374BA /* ProfilePicCellTableViewCell.swift */,
 				924DB9FA291E332F00B374BA /* ProfilePicCellTableViewCell.xib */,
+				924DB9F5291E32F100B374BA /* SideMenuTableViewCell.swift */,
+				924DB9F6291E32F100B374BA /* SideMenuTableViewCell.xib */,
 			);
-			path = SideTableCells;
+			path = sideMenu;
+			sourceTree = "<group>";
+		};
+		926002E829224D7700EAF3C2 /* HomePageCell */ = {
+			isa = PBXGroup;
+			children = (
+				926002DD291E5D9400EAF3C2 /* CollectionViewCell.xib */,
+				926002DC291E5D9400EAF3C2 /* CollectionViewCell.swift */,
+				926002E229220CDE00EAF3C2 /* ProductTypeCollectionViewCell.swift */,
+				926002E329220CDE00EAF3C2 /* ProductTypeCollectionViewCell.xib */,
+			);
+			path = HomePageCell;
+			sourceTree = "<group>";
+		};
+		926002EB29225D7800EAF3C2 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				926CE93C291A63B3001A81D4 /* LoginViewController.swift */,
+				926CE96E291B9FAE001A81D4 /* SignUpPageViewController.swift */,
+				926CE973291BDA2B001A81D4 /* ForgetPasswordViewController.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		926CE92C291A63B3001A81D4 = {
@@ -189,12 +223,8 @@
 		926CE968291A68F2001A81D4 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9212CEDC291E1813004ABAB0 /* SideTableCells */,
-				926CE97D291D3065001A81D4 /* sideMenuViewController.swift */,
-				926CE93C291A63B3001A81D4 /* LoginViewController.swift */,
-				926CE96E291B9FAE001A81D4 /* SignUpPageViewController.swift */,
-				926CE973291BDA2B001A81D4 /* ForgetPasswordViewController.swift */,
-				926CE977291D2BA6001A81D4 /* HomeViewController.swift */,
+				926002EB29225D7800EAF3C2 /* User */,
+				926002E629224CD100EAF3C2 /* HomePage */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -361,7 +391,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				926CE945291A63B6001A81D4 /* LaunchScreen.storyboard in Resources */,
+				926002E529220CDE00EAF3C2 /* ProductTypeCollectionViewCell.xib in Resources */,
 				926CE942291A63B6001A81D4 /* Assets.xcassets in Resources */,
+				926002DF291E5D9400EAF3C2 /* CollectionViewCell.xib in Resources */,
 				926CE940291A63B3001A81D4 /* Main.storyboard in Resources */,
 				924DB9F8291E32F100B374BA /* SideMenuTableViewCell.xib in Resources */,
 				924DB9FC291E332F00B374BA /* ProfilePicCellTableViewCell.xib in Resources */,
@@ -496,12 +528,12 @@
 				926CE939291A63B3001A81D4 /* AppDelegate.swift in Sources */,
 				926CE96D291B9F1E001A81D4 /* CustomBGViewController.swift in Sources */,
 				924DB9F7291E32F100B374BA /* SideMenuTableViewCell.swift in Sources */,
-				926CE978291D2BA6001A81D4 /* HomeViewController.swift in Sources */,
+				926002E429220CDE00EAF3C2 /* ProductTypeCollectionViewCell.swift in Sources */,
 				926CE93B291A63B3001A81D4 /* SceneDelegate.swift in Sources */,
 				926CE974291BDA2B001A81D4 /* ForgetPasswordViewController.swift in Sources */,
-				9212CEDE291E1832004ABAB0 /* TableViewCell.swift in Sources */,
 				926CE972291BBDC7001A81D4 /* customtextfield.swift in Sources */,
 				9212CEDB291E16EB004ABAB0 /* NavigationModel.swift in Sources */,
+				926002DE291E5D9400EAF3C2 /* CollectionViewCell.swift in Sources */,
 				926CE96F291B9FAE001A81D4 /* SignUpPageViewController.swift in Sources */,
 				924DB9FB291E332F00B374BA /* ProfilePicCellTableViewCell.swift in Sources */,
 				926CE97E291D3065001A81D4 /* sideMenuViewController.swift in Sources */,

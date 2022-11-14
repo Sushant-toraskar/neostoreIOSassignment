@@ -9,6 +9,10 @@ import UIKit
 
 class SideMenuTableViewCell: UITableViewCell {
 
+
+    @IBOutlet weak var routeIcon: UIImageView!
+    @IBOutlet weak var cartItems: custombtn!
+    @IBOutlet weak var RouteName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
