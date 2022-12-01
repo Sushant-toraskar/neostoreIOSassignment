@@ -8,22 +8,30 @@
 import UIKit
 
 class ForgetPasswordViewController: UIViewController {
-
+    var vm = forgetPassViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.assignBackground()
-        // Do any additional setup after loading the view.
+        vm.delegate = self
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func HandleButtonClick(_ sender: Any) {
+        var parameter = ["email":"cehela8579@xegge.com"]
+        vm.returnData(parameter: parameter)
     }
-    */
+}
 
+extension ForgetPasswordViewController : handleFPprotocol{
+    func handleFPAPi(_ resp: ForgetPassModel) {
+        successAlert(resp.user_msg!, self: self)
+    }
+    
+    func handleError(_ msg: String) {
+        showError(msg, self: self)
+    }
+    
+    
 }

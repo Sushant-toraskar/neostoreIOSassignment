@@ -8,6 +8,8 @@ target 'NeostoreAssignment' do
   # Pods for NeostoreAssignment
   pod 'IQKeyboardManagerSwift'
   pod 'SideMenu'
+  pod 'Alamofire'
+  
 
 
   target 'NeostoreAssignmentTests' do

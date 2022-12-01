@@ -9,6 +9,7 @@ import UIKit
 
 class SignUpPageViewController: UIViewController, UIGestureRecognizerDelegate {
 
+
     @IBOutlet weak var maleimg: UIImageView!
     @IBOutlet weak var femaleImg: UIImageView!
     @IBOutlet weak var termsBtn: UIStackView!
@@ -16,12 +17,25 @@ class SignUpPageViewController: UIViewController, UIGestureRecognizerDelegate {
     var gender : Bool!
     var checkterms = false
     
+    var vM =  RegisterViewModel()
+    let parameter = ["first_name":"sush",
+                     "last_name":"tor",
+                     "email":"cehela8579@xegge.com",
+                     "password":"password1",
+                     "confirm_password":"password1",
+                     "gender": "M",
+                     "phone_no": 77150200100] as [String : Any]
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.assignBackground()
         navigationController?.isNavigationBarHidden = false
         addTapGesture()
         print("gender",gender)
+        vM.delegate = self
+        
     }
     
     func addTapGesture(){
@@ -53,7 +67,7 @@ class SignUpPageViewController: UIViewController, UIGestureRecognizerDelegate {
 //        }
     }
     @IBAction func submitBtn(_ sender: Any) {
-        print("gender is \(gender)")
+        vM.returnData(parameter: parameter)
     }
     
     @objc func termsactionhandler(){
@@ -66,4 +80,15 @@ class SignUpPageViewController: UIViewController, UIGestureRecognizerDelegate {
             checkbox.image = UIImage(named: "checked_icon")
         }
     }
+}
+
+extension SignUpPageViewController : HandleAPiProtocol{
+    func handleAPi(_ resp: RegisterModel) {
+        successAlert(resp.message!, self: self)
+    }
+    
+    func handleError(_ msg : String) {
+        showError(msg, self: self)
+    }
+    
 }

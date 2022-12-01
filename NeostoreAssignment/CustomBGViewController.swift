@@ -32,5 +32,11 @@ extension UIViewController {
         self.view.sendSubviewToBack(imageView)
         
     }
+    
+    func changeStatusBarBG(color : UIColor){
+        let statusBarView = UIView(frame: UIApplication.shared.statusBarFrame)
+        statusBarView.backgroundColor = color
+        view.addSubview(statusBarView)
+    }
 }
 

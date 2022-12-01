@@ -9,6 +9,8 @@ import UIKit
 
 class ProfilePicCellTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var UserName: UILabel!
+    @IBOutlet weak var UserMail: UILabel!
     @IBOutlet weak var profilePic: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -18,7 +20,6 @@ class ProfilePicCellTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
 }

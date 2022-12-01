@@ -62,6 +62,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="UserMail" destination="hIO-ie-9g4" id="erl-VX-O4q"/>
+                <outlet property="UserName" destination="IEb-DL-ido" id="L2g-z6-j6u"/>
                 <outlet property="profilePic" destination="fQh-zH-2NF" id="LJL-bA-UY7"/>
             </connections>
             <point key="canvasLocation" x="116.66666666666667" y="128.57142857142856"/>

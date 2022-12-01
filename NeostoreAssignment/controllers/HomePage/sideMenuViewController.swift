@@ -1,16 +1,14 @@
-//
-//  sideMenuViewController.swift
-//  NeostoreAssignment
-//
-//  Created by Neosoft on 10/11/22.
-//
-
 import UIKit
 
 class sideMenuViewController: UIViewController {
     var menu  = false
     let screen = UIScreen.main.bounds
     var home  = CGAffineTransform()
+    var profileData : LoginData?
+    var sb = UIStoryboard(name: "Main", bundle: nil)
+   
+    
+    var vm = HomeViewModel()
     
     @IBOutlet weak var SideViewTable: UITableView!
     @IBOutlet weak var HomeView: UIView!
@@ -23,16 +21,15 @@ class sideMenuViewController: UIViewController {
     let CollectionViewCell = "CollectionViewCell"
     let ProductTypeCollectionViewCell = "ProductTypeCollectionViewCell"
     let SideMenuTableViewCell = "SideMenuTableViewCell"
-    
-    
-    let sliderImagesList = [UIImage(named: "slider_img1"),UIImage(named: "slider_img2"),UIImage(named: "slider_img3"),UIImage(named: "slider_img4")]
+
     
     let productTypeImgList = [UIImage(named: "tableicon"),UIImage(named: "sofaicon"),UIImage(named: "chairsicon"),UIImage(named: "cupboardicon")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        PageControl.numberOfPages = sliderImagesList.count
+        vm.delegate = self
+        vm.returnData()
+        PageControl.numberOfPages = 4
         PageControl.allowsContinuousInteraction = true
         PageControl.currentPage = 0
         
@@ -79,12 +76,8 @@ class sideMenuViewController: UIViewController {
     func hideMenu() {
         
         UIView.animate(withDuration: 0.7, animations: {
-            
             self.HomeView.transform = self.home
             self.HomeView.layer.cornerRadius = 0
-           
-            
-            // self.viewBG.layer.cornerRadius = 0
         })
     }
 
@@ -113,7 +106,6 @@ class sideMenuViewController: UIViewController {
             hideMenu()
             menu = false
         }
-       
     }
     
     @objc func handleProductTap() {
@@ -137,6 +129,10 @@ extension sideMenuViewController :  UITableViewDelegate,UITableViewDataSource {
         if indexPath.row == 0{
             let cell = tableView.dequeueReusableCell(withIdentifier: ProfilePicCellTableViewCell, for: indexPath) as! ProfilePicCellTableViewCell
             cell.backgroundColor = .clear
+            if let fname = profileData?.first_name, let lname = profileData?.last_name,let mail = profileData?.email{
+                cell.UserName.text = "\(fname) \(lname)"
+                cell.UserMail.text = "\(mail)"
+            }
             return cell
             
         }else{
@@ -150,7 +146,7 @@ extension sideMenuViewController :  UITableViewDelegate,UITableViewDataSource {
                 cell.cartItems.isHidden = false
                 cell.cartItems.setTitle("2", for: .normal)
             }
-
+            
             return cell
         }
     }
@@ -166,7 +162,7 @@ extension sideMenuViewController : UICollectionViewDelegate, UICollectionViewDat
         if collectionView == ProductTypesCollection{
             return productTypeImgList.count
         }else{
-            return sliderImagesList.count
+            return 4
         }
         
     }
@@ -180,8 +176,11 @@ extension sideMenuViewController : UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == ProductTypesCollection{
             let productTypeCell = collectionView.dequeueReusableCell(withReuseIdentifier: ProductTypeCollectionViewCell, for: indexPath) as! ProductTypeCollectionViewCell
+
+            
             productTypeCell.productListImg.image = productTypeImgList[indexPath.row]
             
+
 //            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleProductTap))
 //            productTypeCell.addGestureRecognizer(tapGesture)
 //            productTypeCell.isUserInteractionEnabled = true
@@ -189,8 +188,6 @@ extension sideMenuViewController : UICollectionViewDelegate, UICollectionViewDat
             return productTypeCell
         }else{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell, for: indexPath) as! CollectionViewCell
-            
-            cell.sliderImage.image = sliderImagesList[indexPath.row]
             return cell
         }
     }
@@ -198,12 +195,10 @@ extension sideMenuViewController : UICollectionViewDelegate, UICollectionViewDat
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("cell")
+        let nextvc = sb.instantiateViewController(identifier: "productList") as! ProductListViewController
         if collectionView == ProductTypesCollection{
-            let productTypeCell = collectionView.dequeueReusableCell(withReuseIdentifier: ProductTypeCollectionViewCell,
-                                                                     for: indexPath) as! ProductTypeCollectionViewCell
-            productTypeCell.productListImg.image = productTypeImgList[indexPath.row]
-
-
+            self.navigationController?.pushViewController(nextvc, animated: true)
+            
         }
     }
     
@@ -213,10 +208,20 @@ extension sideMenuViewController : UICollectionViewDelegate, UICollectionViewDat
         }else{
             return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
         }
-       
     }
+}
 
+extension sideMenuViewController : HandleHomeAPiProtocol {
+    func handleAPi(_ resp: HomeModel) {
+        successAlert("profile fetched", self: self)
+        
+        profileData = resp.data?.user_data
+        self.SideViewTable.reloadData()
+    }
     
+    func handleError(_ msg: String) {
+        showError(msg, self: self)
+    }
     
     
 }

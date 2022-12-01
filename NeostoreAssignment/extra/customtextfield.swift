@@ -32,4 +32,34 @@ import UIKit
             self.layer.cornerRadius = roundedCorner
         }
     }
+    @IBInspectable var borderclr : UIColor! {
+        didSet{
+            self.layer.borderWidth = 1
+            self.layer.borderColor = UIColor.lightGray.cgColor
+        }
+    }
 }
+
+@IBDesignable class customNavigation : UINavigationController {
+    @IBInspectable var titleColor : UIColor! {
+        didSet{
+            
+            self.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+            self.navigationBar.backIndicatorImage = UIImage(systemName: "chevron.backward")
+            self.navigationBar.backIndicatorTransitionMaskImage = UIImage(systemName: "chevron.backward")
+            
+        }
+    }
+    
+    
+}
+
+//@IBDesignable class customNavigationbar : UINavigationBar {
+//    @IBInspectable var titleColor : UIColor! {
+//        didSet{
+//
+//            self.titleTextAttributes = [.foregroundColor: UIColor.white]
+//
+//        }
+//    }
+//}
