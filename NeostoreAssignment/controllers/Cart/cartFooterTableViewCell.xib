@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cartFooterTableViewCell" rowHeight="175" id="KGk-i7-Jjw" customClass="cartFooterTableViewCell" customModule="NeostoreAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="402" height="175"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="402" height="175"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xhU-en-7tI">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="175"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="cWb-Pf-4ny">
+                                <rect key="frame" x="0.0" y="0.0" width="402" height="93"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mkg-BA-9VO">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="93"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="GXZ-Hr-74R"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹ 180.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohl-IZ-jea">
+                                        <rect key="frame" x="272" y="0.0" width="130" height="93"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="T49-mI-2uw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xek-Zg-h4j">
+                                <rect key="frame" x="0.0" y="93" width="402" height="1"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="rqq-tY-7PF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfA-wo-khI">
+                                <rect key="frame" x="0.0" y="94" width="402" height="81"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etl-nO-w5A" customClass="custombtn" customModule="NeostoreAssignment" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="382" height="61"/>
+                                        <color key="backgroundColor" red="0.98034211780000002" green="0.05420343381" blue="0.045001769210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                        <state key="normal" title="ORDER NOW">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="roundedCorner">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="etl-nO-w5A" firstAttribute="top" secondItem="qfA-wo-khI" secondAttribute="top" constant="10" id="7Ly-Ts-4bw"/>
+                                    <constraint firstItem="etl-nO-w5A" firstAttribute="leading" secondItem="qfA-wo-khI" secondAttribute="leading" constant="10" id="Hdh-wh-1AY"/>
+                                    <constraint firstAttribute="trailing" secondItem="etl-nO-w5A" secondAttribute="trailing" constant="10" id="HgR-dP-73C"/>
+                                    <constraint firstAttribute="bottom" secondItem="etl-nO-w5A" secondAttribute="bottom" constant="10" id="o8N-zp-on4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" red="0.69010752440000001" green="0.69016700980000001" blue="0.69419401879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="xhU-en-7tI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0We-lm-eLk"/>
+                    <constraint firstAttribute="trailing" secondItem="xhU-en-7tI" secondAttribute="trailing" id="9yP-QX-XIZ"/>
+                    <constraint firstAttribute="bottom" secondItem="xhU-en-7tI" secondAttribute="bottom" id="Io9-R2-Ja1"/>
+                    <constraint firstItem="xhU-en-7tI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="e1n-aJ-y6I"/>
+                    <constraint firstItem="etl-nO-w5A" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.35" id="p0p-jp-O6a"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="OrderNowBtn" destination="etl-nO-w5A" id="ZbA-dA-l4j"/>
+                <outlet property="TotalCost" destination="ohl-IZ-jea" id="8g2-sq-O9Z"/>
+            </connections>
+            <point key="canvasLocation" x="94.20289855072464" y="107.47767857142857"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="etl-nO-w5A">
+            <size key="intrinsicContentSize" width="143" height="41"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

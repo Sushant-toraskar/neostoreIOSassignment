@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="OrderTableViewCell" rowHeight="120" id="KGk-i7-Jjw" customClass="OrderTableViewCell" customModule="NeostoreAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="449" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="449" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WFB-B2-VZO">
+                        <rect key="frame" x="0.0" y="0.0" width="449" height="120"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kbw-4w-iL0">
+                                <rect key="frame" x="0.0" y="0.0" width="224.5" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order ID : 15879" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WsD-fF-lCi">
+                                        <rect key="frame" x="10" y="0.0" width="214.5" height="59.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKV-1e-Tz3">
+                                        <rect key="frame" x="10" y="59.5" width="204.5" height="1"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.69019607839999997" green="0.69016700980000001" blue="0.69419401879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="fqp-SZ-yD7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ordered Date : 07 Aug' 15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MY-bM-Lnv">
+                                        <rect key="frame" x="10" y="60.5" width="214.5" height="59.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xKV-1e-Tz3" firstAttribute="leading" secondItem="kbw-4w-iL0" secondAttribute="leading" constant="10" id="7ny-yh-ftL"/>
+                                    <constraint firstItem="9MY-bM-Lnv" firstAttribute="top" secondItem="xKV-1e-Tz3" secondAttribute="bottom" id="BSF-cG-xJW"/>
+                                    <constraint firstAttribute="trailing" secondItem="9MY-bM-Lnv" secondAttribute="trailing" id="Ob0-Zf-F1z"/>
+                                    <constraint firstAttribute="trailing" secondItem="WsD-fF-lCi" secondAttribute="trailing" id="TxL-LH-Raa"/>
+                                    <constraint firstItem="xKV-1e-Tz3" firstAttribute="top" secondItem="WsD-fF-lCi" secondAttribute="bottom" id="W3n-e5-fRq"/>
+                                    <constraint firstItem="9MY-bM-Lnv" firstAttribute="leading" secondItem="kbw-4w-iL0" secondAttribute="leading" constant="10" id="YIh-Iw-4AK"/>
+                                    <constraint firstItem="WsD-fF-lCi" firstAttribute="leading" secondItem="kbw-4w-iL0" secondAttribute="leading" constant="10" id="dFL-F0-bbc"/>
+                                    <constraint firstItem="WsD-fF-lCi" firstAttribute="top" secondItem="kbw-4w-iL0" secondAttribute="top" id="g2I-GD-bee"/>
+                                    <constraint firstAttribute="trailing" secondItem="xKV-1e-Tz3" secondAttribute="trailing" constant="10" id="hZA-sB-SlI"/>
+                                    <constraint firstItem="9MY-bM-Lnv" firstAttribute="height" secondItem="WsD-fF-lCi" secondAttribute="height" id="ii9-bd-WYh"/>
+                                    <constraint firstAttribute="bottom" secondItem="9MY-bM-Lnv" secondAttribute="bottom" id="vsr-Yk-bxc"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹ 40.00 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kam-Tc-aRb">
+                                <rect key="frame" x="224.5" y="0.0" width="224.5" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mM8-Ga-uLz">
+                        <rect key="frame" x="0.0" y="119" width="449" height="1"/>
+                        <color key="backgroundColor" red="0.69010752440000001" green="0.69016700980000001" blue="0.69419401879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="14t-EV-oL3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WFB-B2-VZO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="IgG-Jq-Rx2"/>
+                    <constraint firstItem="WFB-B2-VZO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="QFe-3T-qIX"/>
+                    <constraint firstAttribute="trailing" secondItem="WFB-B2-VZO" secondAttribute="trailing" id="Rcr-Iu-afC"/>
+                    <constraint firstAttribute="trailing" secondItem="mM8-Ga-uLz" secondAttribute="trailing" id="dM0-Tk-QwL"/>
+                    <constraint firstAttribute="bottom" secondItem="WFB-B2-VZO" secondAttribute="bottom" id="tFZ-mQ-Pag"/>
+                    <constraint firstAttribute="bottom" secondItem="mM8-Ga-uLz" secondAttribute="bottom" id="thA-6Q-40W"/>
+                    <constraint firstItem="mM8-Ga-uLz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yF0-7y-WkM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="OrderPrice" destination="kam-Tc-aRb" id="bYP-ca-GKQ"/>
+                <outlet property="orderDate" destination="9MY-bM-Lnv" id="Yo5-Xi-V1p"/>
+                <outlet property="orderId" destination="WsD-fF-lCi" id="9Oh-pV-Jq6"/>
+            </connections>
+            <point key="canvasLocation" x="128.2608695652174" y="84.375"/>
+        </tableViewCell>
+    </objects>
+</document>
