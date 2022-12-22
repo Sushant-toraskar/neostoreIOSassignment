@@ -11,7 +11,6 @@ protocol HandleAPiProtocol : AnyObject
 {
     func handleAPi(_ resp : RegisterModel)
     func handleError(_ msg : String)
-    
 }
 
 class RegisterViewModel{

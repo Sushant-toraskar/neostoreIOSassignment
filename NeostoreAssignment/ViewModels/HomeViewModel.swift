@@ -16,7 +16,9 @@ protocol HandleHomeAPiProtocol : AnyObject
 class HomeViewModel{
     
     var delegate : HandleHomeAPiProtocol?
+
     var ProfileData : LoginData?
+
     
     func returnData(){
         var url = "http://staging.php-dev.in:8844/trainingapp/api/users/getUserData"
@@ -27,6 +29,7 @@ class HomeViewModel{
                     print("got it ")
                     delegate?.handleAPi("Profile data fetched")
                     ProfileData = resp.data?.user_data
+
                 }
                 else{
                     

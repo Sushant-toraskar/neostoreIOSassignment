@@ -10,6 +10,7 @@ import UIKit
 class SignUpPageViewController: BaseViewController, UIGestureRecognizerDelegate {
 
 
+
     @IBOutlet weak var maleimg: UIImageView!
     @IBOutlet weak var femaleImg: UIImageView!
     @IBOutlet weak var termsBtn: UIStackView!
@@ -86,11 +87,13 @@ extension SignUpPageViewController : HandleAPiProtocol{
     func handleAPi(_ resp: RegisterModel) {
         successAlert(resp.message!, self: self)
         self.stopLoader()
+
     }
     
     func handleError(_ msg : String) {
         showError(msg, self: self)
         self.stopLoader()
+
     }
     
 }

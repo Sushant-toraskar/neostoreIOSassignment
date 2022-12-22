@@ -35,7 +35,9 @@
 		9243E873292CCC97004F29F2 /* productImagesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9243E871292CCC97004F29F2 /* productImagesCollectionViewCell.xib */; };
 		9243E875292DEFDF004F29F2 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9243E874292DEFDF004F29F2 /* LoginModel.swift */; };
 		9243E877292DF50B004F29F2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9243E876292DF50B004F29F2 /* LoginViewModel.swift */; };
+
 		9243E879292DFAC1004F29F2 /* HandleAPi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9243E878292DFAC1004F29F2 /* HandleAPi.swift */; };
+
 		9245849D29348B1A00C3EF96 /* errorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9245849C29348B1A00C3EF96 /* errorModel.swift */; };
 		9245849F2934C35000C3EF96 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9245849E2934C35000C3EF96 /* RegisterModel.swift */; };
 		924DB9F7291E32F100B374BA /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924DB9F5291E32F100B374BA /* SideMenuTableViewCell.swift */; };
@@ -51,6 +53,7 @@
 		926002F9292369DA00EAF3C2 /* ProductListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 926002F7292369DA00EAF3C2 /* ProductListTableViewCell.xib */; };
 		9267776229473E5200160EDF /* Pods_NeostoreAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9267776129473E5200160EDF /* Pods_NeostoreAssignment.framework */; };
 		9267776E29485C7E00160EDF /* RealmImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9267776D29485C7E00160EDF /* RealmImplementation.swift */; };
+
 		926CE939291A63B3001A81D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926CE938291A63B3001A81D4 /* AppDelegate.swift */; };
 		926CE93B291A63B3001A81D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926CE93A291A63B3001A81D4 /* SceneDelegate.swift */; };
 		926CE93D291A63B3001A81D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926CE93C291A63B3001A81D4 /* LoginViewController.swift */; };
@@ -71,7 +74,6 @@
 		9278DC9F293A24CA00729765 /* CartProdTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9278DC9D293A24CA00729765 /* CartProdTableViewCell.xib */; };
 		928898A129433EEE00993F11 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928898A029433EEE00993F11 /* MyAccountViewController.swift */; };
 		928898A32943583800993F11 /* EditAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928898A22943583800993F11 /* EditAccountViewController.swift */; };
-		928898B2294735A700993F11 /* DatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928898B1294735A700993F11 /* DatabaseHandler.swift */; };
 		929C69B62936299300D50D55 /* registerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929C69B52936299300D50D55 /* registerViewModel.swift */; };
 		929C69B8293750DD00D50D55 /* customModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929C69B7293750DD00D50D55 /* customModal.swift */; };
 		929C69BA293762C100D50D55 /* ForgetPassViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929C69B9293762C100D50D55 /* ForgetPassViewModel.swift */; };
@@ -86,6 +88,7 @@
 		92B2AE0A294B44D000D1EB62 /* OrderDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2AE09294B44D000D1EB62 /* OrderDetailsModel.swift */; };
 		92B2AE0C294B4F2900D1EB62 /* OrderDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2AE0B294B4F2900D1EB62 /* OrderDetailsViewModel.swift */; };
 		92DDA38C29533901006368EC /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DDA38B29533901006368EC /* ResetPasswordViewController.swift */; };
+
 		C3A911E744769E040631569E /* Pods_NeostoreAssignment_NeostoreAssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601CDC33E4CAD61EA8ED723A /* Pods_NeostoreAssignment_NeostoreAssignmentUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -139,6 +142,7 @@
 		9243E874292DEFDF004F29F2 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		9243E876292DF50B004F29F2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		9243E878292DFAC1004F29F2 /* HandleAPi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleAPi.swift; sourceTree = "<group>"; };
+
 		9245849C29348B1A00C3EF96 /* errorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = errorModel.swift; sourceTree = "<group>"; };
 		9245849E2934C35000C3EF96 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		924DB9F5291E32F100B374BA /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
@@ -154,6 +158,7 @@
 		926002F7292369DA00EAF3C2 /* ProductListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListTableViewCell.xib; sourceTree = "<group>"; };
 		9267776129473E5200160EDF /* Pods_NeostoreAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_NeostoreAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9267776D29485C7E00160EDF /* RealmImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmImplementation.swift; sourceTree = "<group>"; };
+
 		926CE935291A63B3001A81D4 /* NeostoreAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeostoreAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		926CE938291A63B3001A81D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		926CE93A291A63B3001A81D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -356,6 +361,7 @@
 			children = (
 				9278DC922939C81000729765 /* ProoductList */,
 				9243E86F292CCC70004F29F2 /* productDetails */,
+
 			);
 			path = Products;
 			sourceTree = "<group>";
@@ -449,6 +455,7 @@
 			isa = PBXGroup;
 			children = (
 				9243E878292DFAC1004F29F2 /* HandleAPi.swift */,
+
 			);
 			path = "API Services";
 			sourceTree = "<group>";
@@ -485,6 +492,7 @@
 				922742DF2941F0FC0076DEB4 /* OrderListViewModel.swift */,
 				92B2AE04294B0BAB00D1EB62 /* updateAccountViewModel.swift */,
 				92B2AE0B294B4F2900D1EB62 /* OrderDetailsViewModel.swift */,
+
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -877,6 +885,7 @@
 				926CE96F291B9FAE001A81D4 /* SignUpPageViewController.swift in Sources */,
 				929C69C029377E1700D50D55 /* HomeViewModel.swift in Sources */,
 				9267776E29485C7E00160EDF /* RealmImplementation.swift in Sources */,
+
 				9243E86E292CAF92004F29F2 /* ProductDetailViewController.swift in Sources */,
 				924DB9FB291E332F00B374BA /* ProfilePicCellTableViewCell.swift in Sources */,
 				9243E877292DF50B004F29F2 /* LoginViewModel.swift in Sources */,

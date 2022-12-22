@@ -13,8 +13,6 @@ func successAlert(_ msg : String,self : UIViewController){
     let alert = UIAlertController(title: "Success", message: msg, preferredStyle: .alert)
     alert.addAction(UIAlertAction(title: "ok", style: .cancel, handler: nil))
     self.present(alert, animated: true, completion: nil)
-
-    
 }
 
 func showError(_ error : String,self : UIViewController){

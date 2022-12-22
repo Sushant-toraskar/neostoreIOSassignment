@@ -6,8 +6,8 @@
 //
 
 import UIKit
-
 class ForgetPasswordViewController: BaseViewController {
+
     var vm = forgetPassViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,12 +23,14 @@ class ForgetPasswordViewController: BaseViewController {
         self.startLoader()
         vm.returnData(parameter: parameter)
         
+
     }
 }
 
 extension ForgetPasswordViewController : handleFPprotocol{
     func handleFPAPi(_ resp: ForgetPassModel) {
         self.stopLoader()
+
         successAlert(resp.user_msg!, self: self)
     }
     

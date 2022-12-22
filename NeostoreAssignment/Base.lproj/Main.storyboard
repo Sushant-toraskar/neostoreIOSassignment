@@ -72,6 +72,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="LoginAPiCall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OOJ-VL-h5J"/>
+                                    <segue destination="Tz5-bl-8oE" kind="show" id="cap-rq-3dD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbo-1l-WAv">
@@ -381,6 +382,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="submitBtn:" destination="Tz5-bl-8oE" eventType="touchUpInside" id="TCZ-DC-7qb"/>
+                                                            <segue destination="uHL-6w-NPf" kind="show" id="PFW-AZ-wQB"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -432,11 +434,13 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FvT-Jy-Hif" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1957" y="805"/>
+
         </scene>
         <!--Side Menu View Controller-->
         <scene sceneID="sZR-cU-8yZ">
             <objects>
                 <viewController storyboardIdentifier="sideMenuViewController" id="uHL-6w-NPf" customClass="sideMenuViewController" customModule="NeostoreAssignment" customModuleProvider="target" sceneMemberID="viewController">
+
                     <view key="view" contentMode="scaleToFill" id="pPL-hq-hIG">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -466,6 +470,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdC-L0-0LU">
                                                 <rect key="frame" x="20" y="25" width="30" height="30"/>
+
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="30" id="8rA-th-2w7"/>
                                                     <constraint firstAttribute="height" constant="30" id="yWZ-zV-ZLy"/>
@@ -525,6 +530,7 @@
                                     </collectionView>
                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="3cn-SU-5zp">
                                         <rect key="frame" x="100" y="312.66666666666669" width="228" height="27"/>
+
                                     </pageControl>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
@@ -658,6 +664,7 @@
                                     <outlet property="delegate" destination="da6-qF-kIR" id="WnC-0x-EaB"/>
                                 </connections>
                             </tableView>
+
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DQc-3m-Psu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -683,11 +690,13 @@
                     <connections>
                         <outlet property="ProductListTable" destination="svA-a6-nM1" id="E1t-VF-wtv"/>
                         <outlet property="productListTitle" destination="ooa-Xp-j4p" id="Uvr-us-YJ7"/>
+
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qpz-Zm-VTg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2729" y="-14"/>
+
         </scene>
         <!--Product Detail View Controller-->
         <scene sceneID="CTr-bK-1QP">
@@ -714,6 +723,7 @@
                                         <barButtonItem key="rightBarButtonItem" image="search_icon" id="Dgq-nC-ENy">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </barButtonItem>
+
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -923,6 +933,7 @@
                                                 <connections>
                                                     <action selector="handleBuyNow:" destination="yop-Yf-axi" eventType="touchUpInside" id="PKS-5J-iuH"/>
                                                 </connections>
+
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rb7-Vc-9A4" customClass="custombtn" customModule="NeostoreAssignment" customModuleProvider="target">
                                                 <rect key="frame" x="185" y="0.0" width="175" height="60"/>
@@ -942,6 +953,7 @@
                                                 <connections>
                                                     <action selector="handleRating:" destination="yop-Yf-axi" eventType="touchUpInside" id="vnl-3x-l7i"/>
                                                 </connections>
+
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -1330,6 +1342,7 @@
             </objects>
             <point key="canvasLocation" x="4582.7102803738317" y="-34.341252699784022"/>
         </scene>
+
         <!--Forget Password-->
         <scene sceneID="b58-LK-Pl9">
             <objects>
@@ -2512,6 +2525,7 @@
         <designable name="Hfx-4s-57I">
             <size key="intrinsicContentSize" width="61" height="36"/>
         </designable>
+
         <designable name="Ipw-f1-fWm">
             <size key="intrinsicContentSize" width="215.33333333333334" height="40"/>
         </designable>
@@ -2524,6 +2538,7 @@
         <designable name="Qrx-oh-uCM">
             <size key="intrinsicContentSize" width="63" height="31.333333333333332"/>
         </designable>
+
         <designable name="Rb7-Vc-9A4">
             <size key="intrinsicContentSize" width="49" height="36"/>
         </designable>

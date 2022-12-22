@@ -11,12 +11,11 @@ class sideMenuViewController: BaseViewController {
     var home  = CGAffineTransform()
 //    var profileData : LoginData?
     var sb = UIStoryboard(name: "Main", bundle: nil)
-   
-    
     var vm = HomeViewModel()
     var profileVM = LoginViewModel()
     var vc = ProductListViewController()
     var profileData : Any?
+
     
     @IBOutlet weak var SideViewTable: UITableView!
     @IBOutlet weak var HomeView: UIView!
@@ -73,9 +72,6 @@ class sideMenuViewController: BaseViewController {
         
         
     }
-    
-    
-    
 
     
     func showMenu() {
@@ -146,10 +142,12 @@ extension sideMenuViewController :  UITableViewDelegate,UITableViewDataSource {
         if indexPath.row == 0{
             let cell = tableView.dequeueReusableCell(withIdentifier: ProfilePicCellTableViewCell, for: indexPath) as! ProfilePicCellTableViewCell
             cell.backgroundColor = .clear
+
             if let fname = profileVM.profileData?.first_name, let lname = profileVM.profileData?.last_name,let mail = profileVM.profileData?.email{
                 cell.UserName.text = "\(fname) \(lname)"
                 cell.UserMail.text = "\(mail)"
                 cell.profilePic.downloaded(from: profileVM.profileData?.profile_pic ?? "", contentMode: .scaleAspectFit)
+
             }
             return cell
             
@@ -157,7 +155,7 @@ extension sideMenuViewController :  UITableViewDelegate,UITableViewDataSource {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: SideMenuTableViewCell , for: indexPath) as! SideMenuTableViewCell
         print(indexPath.row)
-            
+
         cell.RouteName.text = options[indexPath.row - 1].title
             cell.cartItems.isHidden = true
         cell.routeIcon.image = UIImage(named: options[indexPath.row - 1].icon)
@@ -213,13 +211,13 @@ extension sideMenuViewController :  UITableViewDelegate,UITableViewDataSource {
 //        }indexPath.row == 6{
 //
 //        }
+
     }
 }
 
 
 extension sideMenuViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    
-    
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == ProductTypesCollection{
             return productTypeImgList.count
@@ -239,9 +237,11 @@ extension sideMenuViewController : UICollectionViewDelegate, UICollectionViewDat
         if collectionView == ProductTypesCollection{
             let productTypeCell = collectionView.dequeueReusableCell(withReuseIdentifier: ProductTypeCollectionViewCell, for: indexPath) as! ProductTypeCollectionViewCell
 
+
             print("prod img",productTypeImgList[indexPath.row])
             productTypeCell.productListImg.image = productTypeImgList[indexPath.row]
             
+
 
             
             return productTypeCell
@@ -274,6 +274,7 @@ extension sideMenuViewController : UICollectionViewDelegate, UICollectionViewDat
                 return
             }
             self.navigationController?.pushViewController(vc, animated: true)
+
             
         }
     }
@@ -286,3 +287,4 @@ extension sideMenuViewController : UICollectionViewDelegate, UICollectionViewDat
         }
     }
 }
+

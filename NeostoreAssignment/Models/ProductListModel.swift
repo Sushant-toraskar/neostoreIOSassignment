@@ -6,7 +6,6 @@
 //
 
 import Foundation
-
 struct ProductsListModel : Codable {
     let status : Int?
     let data : [ProductList]?

@@ -39,10 +39,4 @@ extension UIViewController {
         statusBarView.backgroundColor = color
         view.addSubview(statusBarView)
     }
-    
-    
 }
-
-
-//start
-

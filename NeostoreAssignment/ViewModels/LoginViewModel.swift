@@ -11,12 +11,13 @@ import Alamofire
 class LoginViewModel : NSObject{
     
     var profileData : LoginData?
-    
+
     func CallRegisterAPiAF(completion : @escaping (_ resp: LoginModel?,_ error: ErrModel?) -> ()) {
         let url = "http://staging.php-dev.in:8844/trainingapp/api/users/login"
         
         let parameter = [
             "email" : "yfhvhjvhv@gm.com",
+
             "password" : "password"
         ]
         
@@ -31,6 +32,7 @@ class LoginViewModel : NSObject{
                         jsonData = jsondata
                     }
                     self.profileData = jsonData?.data
+
                     completion(jsonData, nil)
                 }catch let err{
                     print("line",err.localizedDescription)

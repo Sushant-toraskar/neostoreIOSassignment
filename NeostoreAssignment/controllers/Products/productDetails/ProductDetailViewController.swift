@@ -30,10 +30,12 @@ class ProductDetailViewController: BaseViewController,NavigateToCart {
     @IBOutlet weak var prodDescription: UILabel!
 
     
+
     let productImagesCollectionViewCell = "productImagesCollectionViewCell"
     var test = true
     var imgArr = [UIImage(named: "slider_img1"),UIImage(named: "slider_img2"),UIImage(named: "slider_img3"),UIImage(named: "slider_img4"),UIImage(named: "slider_img4")]
     
+
     var VM = ProductDetailViewModel()
     var paramID = 0
     var productCategory = ""
@@ -58,6 +60,7 @@ class ProductDetailViewController: BaseViewController,NavigateToCart {
         self.startLoader()
         VM.delegate = self
         VM.returnData(["product_id": paramID])
+
         self.navigationController?.isNavigationBarHidden = true
         changeStatusBarBG(color: .red)
         productImgCollection.delegate = self
@@ -96,11 +99,13 @@ class ProductDetailViewController: BaseViewController,NavigateToCart {
        
     }
     
+
 }
 
 extension ProductDetailViewController : UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return VM.responceData?.data?.product_images?.count ?? 0
+
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -108,6 +113,7 @@ extension ProductDetailViewController : UICollectionViewDelegate,UICollectionVie
         cell.productImg.layer.borderWidth = 1.0
         cell.productImg.layer.borderColor = UIColor.black.cgColor
         cell.productImg.downloaded(from: VM.responceData?.data?.product_images?[indexPath.row].image ?? "", contentMode: .scaleAspectFill)
+
         
         return cell
     }
@@ -120,6 +126,7 @@ extension ProductDetailViewController : UICollectionViewDelegate,UICollectionVie
         if let cell = collectionView.cellForItem(at: indexPath) as? productImagesCollectionViewCell{
             cell.productImg.layer.borderColor = UIColor.red.cgColor
             prodMainImage.downloaded(from: VM.responceData?.data?.product_images?[indexPath.row].image ?? "", contentMode: .scaleAspectFill)
+
         }
     }
     
@@ -204,8 +211,4 @@ extension ProductDetailViewController : HandleProdDetailsAPiProtocol{
         }
     }
 }
-
-
-
-
 

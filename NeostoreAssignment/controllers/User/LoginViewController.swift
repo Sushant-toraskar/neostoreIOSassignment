@@ -6,8 +6,8 @@
 //
 
 import UIKit
-
 class LoginViewController: BaseViewController {
+
 
     @IBOutlet weak var UsrnameInput: UITextField!
     @IBOutlet weak var LoginBtn: UIButton!
@@ -36,8 +36,8 @@ class LoginViewController: BaseViewController {
             let nextVc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "sideMenuViewController") as! sideMenuViewController
             nextVc.profileVM = self.viewModel
             self.navigationController?.pushViewController(nextVc, animated: true)
+
         }
     }
 }
-
 
